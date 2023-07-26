@@ -34,7 +34,6 @@ include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/nls.mk
 include ../php8/pecl.mk
 
-PKG_FIXUP:=gettext-version
 
 CONFIGURE_ARGS+= \
         --with-zmq=yes \
