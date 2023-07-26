@@ -10,7 +10,7 @@ PKG_RELEASE:=1
 PKG_HASH:=c492375818bd51b355352798fb94f04d6828c6aeda41ba813849624af74144ce
 
 PKG_NAME:=php8-pecl-zmq
-PKG_SOURCE:=$(PECL_NAME)-$(PKG_VERSION).tgz
+PKG_SOURCE:=$(PECL_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/SillaIndustries/php-zmq
 PKG_SOURCE_VERSION:=$(PKG_VERSION)
@@ -44,4 +44,3 @@ CONFIGURE_ARGS+= \
 
 $(eval $(call PHP8PECLPackage,$(PECL_NAME),$(PECL_LONGNAME),+libzmq))
 $(eval $(call BuildPackage,$(PKG_NAME)))
-
