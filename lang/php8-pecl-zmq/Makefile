@@ -34,6 +34,7 @@ include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/nls.mk
 include ../php8/pecl.mk
 
+PKG_FIXUP:=patch-libtool
 
 CONFIGURE_ARGS+= \
         --with-zmq=yes \
