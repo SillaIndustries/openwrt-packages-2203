@@ -5,12 +5,15 @@ include $(TOPDIR)/rules.mk
 
 PECL_NAME:=zmq
 PECL_LONGNAME:=PHP extension for ZeroMQ software library
+PKG_NAME:=php8-pecl-zmq
 PKG_VERSION:=1.1.2
 PKG_RELEASE:=1
 
-PKG_NAME:=php8-pecl-zmq
-PKG_SOURCE_URL:=https://github.com/SillaIndustries/php-zmq/archive/1.1.2.tar.gz
-PKG_SOURCE_VERSION:=$(PKG_VERSION)
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_URL:=https://github.com/SillaIndustries/php-zmq.git
+PKG_SOURCE_VERSION:=v$(PKG_VERSION)
+PKG_HASH:=d1514b3e4b5ee853f658254be282ad2a5f8a550679016e8beec501f77b30488b
 
 define Package/php8-pecl-zmq
     TITLE:=PHP ZeroMQ Extension
