@@ -9,9 +9,7 @@ PKG_VERSION:=1.1.2
 PKG_RELEASE:=1
 
 PKG_NAME:=php8-pecl-zmq
-PKG_SOURCE:=$(PECL_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/SillaIndustries/php-zmq
+PKG_SOURCE_URL:=https://github.com/SillaIndustries/php-zmq/archive/1.1.2.tar.gz
 PKG_SOURCE_VERSION:=$(PKG_VERSION)
 
 define Package/php8-pecl-zmq
