@@ -12,8 +12,8 @@ PKG_RELEASE:=1
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/SillaIndustries/php-zmq.git
-PKG_SOURCE_VERSION:=v$(PKG_VERSION)
-PKG_HASH:=d1514b3e4b5ee853f658254be282ad2a5f8a550679016e8beec501f77b30488b
+PKG_SOURCE_VERSION:=openwrt-build
+PKG_HASH:=dc63d8a44aeaca0cf1c88f1f6d43a04b973d5572
 
 define Package/php8-pecl-zmq
     TITLE:=PHP ZeroMQ Extension
